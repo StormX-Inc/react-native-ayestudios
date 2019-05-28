@@ -1,4 +1,4 @@
-package com.cakecodes.bitmaker;
+package io.stormx.ayestudios;
 
 import java.util.Arrays;
 import java.util.Collections;
@@ -10,11 +10,11 @@ import com.facebook.react.bridge.ReactApplicationContext;
 import com.facebook.react.uimanager.ViewManager;
 import com.facebook.react.bridge.JavaScriptModule;
 
-public class RNPAyeStudiosPackage implements ReactPackage {
+public class RNAyeStudiosPackage implements ReactPackage {
 
     @Override
     public List<NativeModule> createNativeModules(ReactApplicationContext reactContext) {
-      return Arrays.<NativeModule>asList(new RNPollfishModule(reactContext));
+      return Arrays.<NativeModule>asList(new RNAyeStudiosModule(reactContext));
     }
 
     public List<Class<? extends JavaScriptModule>> createJSModules() {
