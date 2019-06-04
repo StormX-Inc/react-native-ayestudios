@@ -8,12 +8,13 @@ import com.ayetstudios.publishersdk.AyetSdk;
 
 public class MainActivity extends AppCompatActivity {
 
+    public static final String userId = "userId";
     boolean started = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        AyetSdk.init(getApplication());
+        AyetSdk.init(getApplication(), getIntent().getStringExtra(userId));
         AyetSdk.showOfferwall(getApplication());
     }
 

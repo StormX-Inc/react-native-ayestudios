@@ -20,9 +20,10 @@ public class RNAyeStudiosModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void showOfferwall() {
+    public void showOfferwall(final String userId) {
         ReactApplicationContext context = getReactApplicationContext();
         Intent intent = new Intent(context, MainActivity.class);
+        intent.putExtra(MainActivity.userId, userId);
         intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(intent);
     }
