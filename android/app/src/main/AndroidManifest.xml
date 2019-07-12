@@ -10,13 +10,6 @@
         <activity android:name="com.ayetstudios.publishersdk.OfferwallActivity" android:configChanges="orientation|screenSize" />
 
         <meta-data android:name="AYET_APP_KEY" android:value="00000000000000000000000000000000" />
-
-        <receiver android:name="com.ayetstudios.publishersdk.TrackingReceiver" android:exported="true" android:enabled="true">
-            <intent-filter>
-                <action android:name="com.android.vending.INSTALL_REFERRER" />
-                <data android:scheme="package" />
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>
